@@ -3,7 +3,7 @@ title: "HRT101.S1 - Introduction to Health Research"
 author:
 - name: Jubayer Hossain
   url: https://jhossain.com
-  affiliation: Founder 
+  affiliation: Founder, CHIRAL Bangladesh
   affiliation_url: https://chiralbd.org 
 date: "`r Sys.Date()`"
 description: |

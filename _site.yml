@@ -1,19 +1,19 @@
-name: "teaching-in-production"
-title: "RStudio Education"
+name: "HRT101.S1"
+title: "CHIRAL Education"
 favicon: images/favicon.ico
 description: |
-  Invited session for Day 3 of the RStudio Instructor Training and Certification Program.
+  Health Research ToolBox - A Step by Step Guide for Beginners
 output_dir: "docs"
 include: ["slides/"]
 creative_commons: CC BY-SA
-repository_url: https://github.com/rstudio-education/teaching-in-production
+repository_url: https://github.com/chiraleducation/HRT101.S1
 navbar:
   logo:
-    image: images/logo.png
-    href: https://www.rstudio.com
+    #image: images/logo.png
+    href: https://www.chiralbd.org 
   right:
     - icon: fab fa-github
-      href: https://github.com/rstudio-education/teaching-in-production
+      href: https://github.com/chiraleducation/HRT101.S1
 output: 
   distill::distill_article:
     toc: true
