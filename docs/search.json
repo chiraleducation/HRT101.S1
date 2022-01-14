@@ -11,8 +11,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\n\nContents\nWelcome\nAcknowledgments\n\n\n\n\nWelcome\nThese are the materials for an invited session for Day 3 of the RStudio Instructor Training and Certification Program, by Dr. Alison Presmanes Hill.\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Alison Hill & Desirée De Leon.\n\n\n\n",
-      "last_modified": "2022-01-14T20:36:41+06:00"
+      "contents": "\n\nContents\nLiterature Review\nAcknowledgments\n\n\n\n\nLiterature Review\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Alison Hill & Desirée De Leon.\n\n\n\n",
+      "last_modified": "2022-01-14T20:40:38+06:00"
     }
   ],
   "collections": []
