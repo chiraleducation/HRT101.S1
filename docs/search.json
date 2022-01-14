@@ -11,8 +11,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\n\nContents\nLiterature Review\nAcknowledgments\n\n\n\n\nLiterature Review\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Alison Hill & Desirée De Leon.\n\n\n\n",
-      "last_modified": "2022-01-14T20:42:21+06:00"
+      "contents": "\n\nContents\nLesson 1: Introduction to Health Research\nLesson 2: Literature Review\nAcknowledgments\n\n\n\n\nLesson 1: Introduction to Health Research\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nLesson 2: Literature Review\nLiterature Review\nSmart Google Searching\nLiterature Databases\nDeveloping a Health Research Topic\nUsing Google Scholar\nUsing PubMed\nOther Biomedical Databases\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Alison Hill & Desirée De Leon.\n\n\n\n",
+      "last_modified": "2022-01-15T00:07:40+06:00"
     }
   ],
   "collections": []

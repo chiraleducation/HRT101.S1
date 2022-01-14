@@ -22,27 +22,39 @@ meta() %>%
     description = "Make your teaching more robust & reproducible with R Markdown",
     generator = "xaringan and remark.js"
   ) %>% 
-  meta_name("github-repo" = "rstudio-education/teaching-in-production") %>% 
+  meta_name("github-repo" = "https://github.com/chiraleducation/HRT101.S1") %>% 
   meta_social(
-    title = "Teaching in Production",
-    url = "https://rstd.io/tip",
-    image = "https://repository-images.githubusercontent.com/288797104/d13f1700-e2cc-11ea-9ed7-0bf3a41af1e4",
-    image_alt = "R Markdown hedgehog by Allison Horst",
+    title = "HRT101.S1 - Introduction to Health Research",
+    url = "https://chiraleducation.github.io/HRT101.S1/",
+    image = "",
+    image_alt = "",
     og_type = "website",
     twitter_card_type = "summary_large_image"
   )
 ```
 
-## Literature Review 
+## Lesson 1: Introduction to Health Research
 
 ```{r share-again, echo=FALSE}
 xaringanExtra::use_share_again()
 ```
 
-```{r embed-xaringan, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+```{r embed-xaringan-1, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
 xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16:9")
 ```
 
+## Lesson 2: Literature Review 
+- Why Literature Review
+- Smart Google Searching
+- Literature Databases
+- Developing a Health Research Topic
+- Using Google Scholar
+- Using PubMed
+- Other Biomedical Databases
+
+```{r embed-xaringan-2, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16:9")
+```
 
 
 ## Acknowledgments {.appendix}
