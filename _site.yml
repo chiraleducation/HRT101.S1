@@ -1,6 +1,6 @@
 name: "HRT101.S1"
 title: "CHIRAL Education"
-favicon: images/favicon.ico
+#favicon: images/favicon.ico
 description: |
   Health Research ToolBox - A Step by Step Guide for Beginners
 output_dir: "docs"
@@ -8,9 +8,9 @@ include: ["slides/"]
 creative_commons: CC BY-SA
 repository_url: https://github.com/chiraleducation/HRT101.S1
 navbar:
-  logo:
+  #logo:
     #image: images/logo.png
-    href: https://www.chiralbd.org 
+    #href: https://www.chiralbd.org 
   right:
     - icon: fab fa-github
       href: https://github.com/chiraleducation/HRT101.S1
