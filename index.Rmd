@@ -42,7 +42,7 @@ xaringanExtra::use_share_again()
 ```
 
 ```{r embed-xaringan, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
-xaringanExtra::embed_xaringan(url = "slides/HRT101_Lesson2.html", ratio = "16:9")
+xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16:9")
 ```
 
 
