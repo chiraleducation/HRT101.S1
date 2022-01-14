@@ -11,8 +11,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\n\nContents\nLesson 1: Introduction to Health Research\nLesson 2: Literature Review\nLesson 3: Scientific Paper Reading and Research Data Management\nAcknowledgments\n\n\n\n\nLesson 1: Introduction to Health Research\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nLesson 2: Literature Review\nWhy Literature Review\nSmart Google Searching\nLiterature Databases\nDeveloping a Health Research Topic\nUsing Google Scholar\nUsing PubMed\nOther Biomedical Databases\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nLesson 3: Scientific Paper Reading and Research Data Management\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Alison Hill & Desirée De Leon.\n\n\n\n",
-      "last_modified": "2022-01-15T00:23:30+06:00"
+      "contents": "\n\nContents\nLesson 1: Introduction to Health Research\nLesson 2: Literature Review\nLesson 3: Scientific Paper Reading and Research Data Management\nAcknowledgments\n\n\n\n\nLesson 1: Introduction to Health Research\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nLesson 2: Literature Review\nWhy Literature Review\nSmart Google Searching\nLiterature Databases\nDeveloping a Health Research Topic\nUsing Google Scholar\nUsing PubMed\nOther Biomedical Databases\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nLesson 3: Scientific Paper Reading and Research Data Management\nResearch Data Management\nScientific Paper Reading\nLiterature Review Matrix\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Jubayer Hossain.\n\n\n\n",
+      "last_modified": "2022-01-15T00:28:49+06:00"
     }
   ],
   "collections": []

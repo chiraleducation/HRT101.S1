@@ -69,4 +69,4 @@ xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson3.html", ratio = "16
 
 ## Acknowledgments {.appendix}
 
-This is website made with the [distill package](https://rstudio.github.io/distill/) and a custom theme by Alison Hill & [Desirée De Leon](https://desiree.rbind.io/).
+This is website made with the [distill package](https://rstudio.github.io/distill/) and a custom theme by [Jubayer Hossain](https://jhossain.com/).
