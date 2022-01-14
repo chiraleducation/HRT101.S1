@@ -1,5 +1,5 @@
 ---
-title: "HRT101"
+title: "HRT101.S1"
 subtitle: "Introduction to Health Research: Literature Review"
 author: "Md. Jubayer Hossain <br/> Founder, CHIRAL Bangladesh"
 date: "`r format(Sys.time(), '%d %B %Y')`"
