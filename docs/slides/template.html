@@ -1,0 +1,657 @@
+---
+title: "HRT101"
+subtitle: "Introduction to Health Research"
+author: "Md. Jubayer Hossain <br/> Founder, CHIRAL Bangladesh"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/chiral.css", "css/chiral-fonts.css"]
+    lib_dir: libs
+    nature:
+      ratio: 16:9
+      highlightStyle: atelier-lakeside-light
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/panelset/panelset.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/panelset/panelset.js"></script>
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/shareon/shareon.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/shareon/shareon.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-shareagain/shareagain.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+
+<div id="agenda" class="section level2">
+<h2>Agenda</h2>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>class: inverse center middle</td>
+</tr>
+<tr class="even">
+<td># Introduction to Python</td>
+</tr>
+</tbody>
+</table>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Footnotes</td>
+</tr>
+<tr class="even">
+<td>Install the <strong>xaringan</strong> package from <a href="https://github.com/yihui/xaringan">Github</a>:</td>
+</tr>
+<tr class="odd">
+<td><code>r remotes::install_github("yihui/xaringan")</code></td>
+</tr>
+</tbody>
+</table>
+<p>You are recommended to use the <a href="https://www.rstudio.com/products/rstudio/">RStudio IDE</a>, but you do not have to.</p>
+<ul>
+<li>Create a new R Markdown document from the menu <code>File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation</code>;<sup>1</sup></li>
+</ul>
+<p>–</p>
+<ul>
+<li>Click the <code>Knit</code> button to compile it;</li>
+</ul>
+<p>–</p>
+<ul>
+<li>or use the <a href="https://rstudio.github.io/rstudioaddins/">RStudio Addin</a><sup>2</sup> “Infinite Moon Reader” to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.</li>
+</ul>
+<p>.footnote[
+[1] 中文用户请看<a href="https://slides.yihui.org/xaringan/zh-CN.html">这份教程</a>]</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">## Two Side</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">## Do you teach code?</td>
+</tr>
+<tr class="even">
+<td align="left">.panelset[
+.panel[.panel-name[Pop quiz]</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>r penguins %&gt;% dplyr::n_distinct(species)</code>
+]</td>
+</tr>
+<tr class="even">
+<td align="left">.panel[.panel-name[Answer]</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>r penguins %&gt;% dplyr::n_distinct(species)</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>Error in list2(...): object 'species' not found</code>
+]</td>
+</tr>
+<tr class="odd">
+<td align="left">.panel[.panel-name[Solution]</td>
+</tr>
+<tr class="even">
+<td align="left"><code>r n_distinct(penguins$species)</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>[1] 3</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>r penguins %&gt;% distinct(species) %&gt;% tally()</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code># A tibble: 1 × 1 n &lt;int&gt; 1     3</code>
+<a href="https://gist.github.com/apreshill/d9107e054f3358d438e04a582b76f7cc" class="uri">https://gist.github.com/apreshill/d9107e054f3358d438e04a582b76f7cc</a>
+]
+]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="slide-tite" class="section level2">
+<h2>Slide Tite</h2>
+<p>Install the <strong>xaringan</strong> package from <a href="https://github.com/yihui/xaringan">Github</a>:</p>
+<pre class="r"><code>remotes::install_github(&quot;yihui/xaringan&quot;)</code></pre>
+<p>–</p>
+<p>You are recommended to use the <a href="https://www.rstudio.com/products/rstudio/">RStudio IDE</a>, but you do not have to.</p>
+<ul>
+<li>Create a new R Markdown document from the menu <code>File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation</code>;<sup>1</sup></li>
+</ul>
+<p>–</p>
+<ul>
+<li>Click the <code>Knit</code> button to compile it;</li>
+</ul>
+<p>–</p>
+<ul>
+<li>or use the <a href="https://rstudio.github.io/rstudioaddins/">RStudio Addin</a><sup>2</sup> “Infinite Moon Reader” to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.</li>
+</ul>
+<p>.footnote[
+[1] 中文用户请看<a href="https://slides.yihui.org/xaringan/zh-CN.html">这份教程</a>]</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>class: inverse center middle</td>
+</tr>
+<tr class="even">
+<td># Topic Changing Interstitial</td>
+</tr>
+</tbody>
+</table>
+<div id="blockquote" class="section level3">
+<h3>Blockquote</h3>
+<blockquote>
+<p>This is a blockquote following a header.</p>
+<p>When something is important enough, you do it even if the odds are not in your favor.</p>
+</blockquote>
+<hr />
+</div>
+<div id="code-blocks" class="section level3">
+<h3>Code Blocks</h3>
+<div id="r-code" class="section level4">
+<h4>R Code</h4>
+<pre class="r"><code>ggplot(gapminder) +
+  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
+  geom_point() +
+  facet_wrap(~year)</code></pre>
+</div>
+<div id="javascript" class="section level4">
+<h4>JavaScript</h4>
+<pre class="js"><code>var fun = function lang(l) {
+  dateformat.i18n = require(&#39;./lang/&#39; + l)
+  return true;
+}</code></pre>
+<hr />
+</div>
+</div>
+<div id="more-r-code" class="section level3">
+<h3>More R Code</h3>
+<pre class="r"><code>dplyr::starwars %&gt;% dplyr::slice_sample(n = 4)</code></pre>
+<hr />
+<pre class="r"><code>cli::cli_alert_success(&quot;It worked!&quot;)</code></pre>
+<pre><code>✓ It worked!</code></pre>
+<p>–</p>
+<pre class="r"><code>message(&quot;Just a friendly message&quot;)</code></pre>
+<pre><code>Just a friendly message</code></pre>
+<p>–</p>
+<pre class="r"><code>warning(&quot;This could be bad...&quot;)</code></pre>
+<pre><code>Warning: This could be bad...</code></pre>
+<p>–</p>
+<pre class="r"><code>stop(&quot;I hope you&#39;re sitting down for this&quot;)</code></pre>
+<pre><code>Error in eval(expr, envir, enclos): I hope you&#39;re sitting down for this</code></pre>
+<p>exclude: false</p>
+<pre class="r"><code>tibble::as_tibble(mtcars)</code></pre>
+<pre><code># A tibble: 32 × 11
+     mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
+   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  21       6  160    110  3.9   2.62  16.5     0     1     4     4
+ 2  21       6  160    110  3.9   2.88  17.0     0     1     4     4
+ 3  22.8     4  108     93  3.85  2.32  18.6     1     1     4     1
+ 4  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1
+ 5  18.7     8  360    175  3.15  3.44  17.0     0     0     3     2
+ 6  18.1     6  225    105  2.76  3.46  20.2     1     0     3     1
+ 7  14.3     8  360    245  3.21  3.57  15.8     0     0     3     4
+ 8  24.4     4  147.    62  3.69  3.19  20       1     0     4     2
+ 9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
+10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
+# … with 22 more rows</code></pre>
+<hr />
+<pre class="r"><code>knitr::kable(head(mtcars), format = &#39;html&#39;)</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+mpg
+</th>
+<th style="text-align:right;">
+cyl
+</th>
+<th style="text-align:right;">
+disp
+</th>
+<th style="text-align:right;">
+hp
+</th>
+<th style="text-align:right;">
+drat
+</th>
+<th style="text-align:right;">
+wt
+</th>
+<th style="text-align:right;">
+qsec
+</th>
+<th style="text-align:right;">
+vs
+</th>
+<th style="text-align:right;">
+am
+</th>
+<th style="text-align:right;">
+gear
+</th>
+<th style="text-align:right;">
+carb
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Mazda RX4
+</td>
+<td style="text-align:right;">
+21.0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+160
+</td>
+<td style="text-align:right;">
+110
+</td>
+<td style="text-align:right;">
+3.90
+</td>
+<td style="text-align:right;">
+2.620
+</td>
+<td style="text-align:right;">
+16.46
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mazda RX4 Wag
+</td>
+<td style="text-align:right;">
+21.0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+160
+</td>
+<td style="text-align:right;">
+110
+</td>
+<td style="text-align:right;">
+3.90
+</td>
+<td style="text-align:right;">
+2.875
+</td>
+<td style="text-align:right;">
+17.02
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Datsun 710
+</td>
+<td style="text-align:right;">
+22.8
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+108
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+3.85
+</td>
+<td style="text-align:right;">
+2.320
+</td>
+<td style="text-align:right;">
+18.61
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hornet 4 Drive
+</td>
+<td style="text-align:right;">
+21.4
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+258
+</td>
+<td style="text-align:right;">
+110
+</td>
+<td style="text-align:right;">
+3.08
+</td>
+<td style="text-align:right;">
+3.215
+</td>
+<td style="text-align:right;">
+19.44
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hornet Sportabout
+</td>
+<td style="text-align:right;">
+18.7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+360
+</td>
+<td style="text-align:right;">
+175
+</td>
+<td style="text-align:right;">
+3.15
+</td>
+<td style="text-align:right;">
+3.440
+</td>
+<td style="text-align:right;">
+17.02
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valiant
+</td>
+<td style="text-align:right;">
+18.1
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+225
+</td>
+<td style="text-align:right;">
+105
+</td>
+<td style="text-align:right;">
+2.76
+</td>
+<td style="text-align:right;">
+3.460
+</td>
+<td style="text-align:right;">
+20.22
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>exclude: false</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>layout: true</td>
+</tr>
+<tr class="even">
+<td>## Lists</td>
+</tr>
+</tbody>
+</table>
+<p>.pull-left[
+#### Here is an unordered list:]</p>
+<p>.pull-right[]</p>
+<hr />
+</div>
+<div id="and-a-nested-list" class="section level3">
+<h3>And a nested list:</h3>
+<ul>
+<li>level 1 item
+<ul>
+<li>level 2 item</li>
+<li>level 2 item
+<ul>
+<li>level 3 item</li>
+<li>level 3 item</li>
+</ul></li>
+</ul></li>
+<li>level 1 item
+<ul>
+<li>level 2 item</li>
+<li>level 2 item</li>
+<li>level 2 item</li>
+</ul></li>
+<li>level 1 item
+<ul>
+<li>level 2 item</li>
+<li>level 2 item</li>
+</ul></li>
+<li>level 1 item</li>
+</ul>
+<hr />
+</div>
+<div id="nesting-an-ol-in-ul-in-an-ol" class="section level3">
+<h3>Nesting an ol in ul in an ol</h3>
+<ul>
+<li>level 1 item (ul)
+<ol style="list-style-type: decimal">
+<li>level 2 item (ol)</li>
+<li>level 2 item (ol)</li>
+</ol>
+<ul>
+<li>level 3 item (ul)</li>
+<li>level 3 item (ul)</li>
+</ul></li>
+<li>level 1 item (ul)
+<ol style="list-style-type: decimal">
+<li>level 2 item (ol)</li>
+<li>level 2 item (ol)</li>
+</ol>
+<ul>
+<li>level 3 item (ul)</li>
+<li>level 3 item (ul)</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>level 4 item (ol)</li>
+<li>level 4 item (ol)</li>
+</ol>
+<ul>
+<li>level 3 item (ul)</li>
+<li>level 3 item (ul)</li>
+</ul></li>
+<li>level 1 item (ul)</li>
+</ul>
+<pre class="r"><code>library(ggplot2)
+(g &lt;- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())</code></pre>
+<p><img src="/HRT101/slides/template_files/figure-html/plot-example-1.png" width="65%" style="display: block; margin: auto;" /></p>
+<hr />
+<pre class="r"><code>g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
+  ggtitle(&quot;A Plot About Cars&quot;)</code></pre>
+<p>.footnote[Requires <code>{showtext}</code>]</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>layout: false</td>
+</tr>
+<tr class="even">
+<td>## Square image</td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td>.footnote[GitHub Octocat]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="wide-image" class="section level3">
+<h3>Wide image</h3>
+<div class="figure">
+<img src="https://docs.github.com/assets/images/help/repository/branching.png" alt="" />
+<p class="caption">A wide image with a diagram of branching in git.</p>
+</div>
+<p>.footnote[Wide images scale to 100% slide width]</p>
+<hr />
+</div>
+</div>
+<div id="two-images" class="section level2">
+<h2>Two images</h2>
+<p>.pull-left[
+<img src="https://octodex.github.com/images/motherhubbertocat.png" alt="A GitHub Octocat, style “mother hubber”" />]</p>
+<p>.pull-right[
+<img src="https://octodex.github.com/images/dinotocat.png" alt="A GitHub Octocat, style “dinotcat”" />]</p>
+<hr />
+<div id="definition-lists-can-be-used-with-html-syntax." class="section level3">
+<h3>Definition lists can be used with HTML syntax.</h3>
+<dl>
+<dt>
+Name
+</dt>
+<dd>
+Godzilla
+</dd>
+<dt>
+Born
+</dt>
+<dd>
+1952
+</dd>
+<dt>
+Birthplace
+</dt>
+<dd>
+Japan
+</dd>
+<dt>
+Color
+</dt>
+<dd>
+Green
+</dd>
+</dl>
+<hr />
+<p>class: center, middle</p>
+</div>
+</div>
+<div id="thanks" class="section level1">
+<h1>Thanks!</h1>
+<p>Find me: <br/>
+Email: <a href="#">contact.jubayerhossain@gmail.com</a><br/>
+Website: <a href="https://jhossain.com/" class="uri">https://jhossain.com/</a><br/>
+Github: <a href="https://github.com/hossainlab" class="uri">https://github.com/hossainlab</a><br/></p>
+</div>

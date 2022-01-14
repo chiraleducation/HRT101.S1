@@ -1,0 +1,52 @@
+---
+title: "HRT101.S1 - Introduction to Health Research"
+author:
+- name: Jubayer Hossain
+  url: https://jhossain.com
+  affiliation: Founder 
+  affiliation_url: https://chiralbd.org 
+date: "`r Sys.Date()`"
+description: |
+  This course will give students a foundation in research principles and practice, mainly applied to public health. In addition, we will have weekly lectures covering various topics, including research methodology, data collection methods, statistics, R programming, data visualization(human perception, color theory, principles of visual design), etc.
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "Make your teaching more robust & reproducible with R Markdown",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "rstudio-education/teaching-in-production") %>% 
+  meta_social(
+    title = "Teaching in Production",
+    url = "https://rstd.io/tip",
+    image = "https://repository-images.githubusercontent.com/288797104/d13f1700-e2cc-11ea-9ed7-0bf3a41af1e4",
+    image_alt = "R Markdown hedgehog by Allison Horst",
+    og_type = "website",
+    twitter_card_type = "summary_large_image"
+  )
+```
+
+## Welcome  
+
+These are the materials for an invited session for Day 3 of the RStudio Instructor Training and Certification Program, by Dr. Alison Presmanes Hill.
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r embed-xaringan, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/HRT101_Lesson2.html", ratio = "16:9")
+```
+
+
+
+## Acknowledgments {.appendix}
+
+This is website made with the [distill package](https://rstudio.github.io/distill/) and a custom theme by Alison Hill & [Desirée De Leon](https://desiree.rbind.io/).

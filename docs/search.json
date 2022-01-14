@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "HRT101.S1 - Introduction to Health Research",
+      "description": "This course will give students a foundation in research principles and practice, mainly applied to public health. In addition, we will have weekly lectures covering various topics, including research methodology, data collection methods, statistics, R programming, data visualization(human perception, color theory, principles of visual design), etc.\n",
+      "author": [
+        {
+          "name": "Jubayer Hossain",
+          "url": "https://jhossain.com"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\n\nContents\nWelcome\nAcknowledgments\n\n\n\n\nWelcome\nThese are the materials for an invited session for Day 3 of the RStudio Instructor Training and Certification Program, by Dr. Alison Presmanes Hill.\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAcknowledgments\nThis is website made with the distill package and a custom theme by Alison Hill & Desirée De Leon.\n\n\n\n",
+      "last_modified": "2022-01-14T20:12:14+06:00"
+    }
+  ],
+  "collections": []
+}
