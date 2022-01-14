@@ -56,6 +56,12 @@ xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16
 xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16:9")
 ```
 
+## Lesson 3: Scientific Paper Reading and Research Data Management
+```{r embed-xaringan-3, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson3.html", ratio = "16:9")
+```
+
+
 
 ## Acknowledgments {.appendix}
 
