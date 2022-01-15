@@ -57,12 +57,13 @@ xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16
 ```
 
 ## Lesson 3: Scientific Paper Reading and Research Data Management
-- How to read a scientific paper?
-- Identifying research gaps
-- Literature Documentation
+- Anatomy of a Scientific Paper
+- How to Read a Scientific Paper Quickly?
+- Academic Phrasebank
+- Identifying Location
 - Research Data Management
-- Scientific Paper Reading
-- Literature Review Matrix
+- Documentation: Literature Review Matrix
+- Using Literature Review Matrix Template 
 
 ```{r embed-xaringan-3, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
 xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson3.html", ratio = "16:9")
