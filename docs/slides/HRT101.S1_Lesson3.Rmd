@@ -130,7 +130,7 @@ class: inverse center, middle
 ## Anatomy of a Scientific Paper: Results
 - Purpose - Presents the data, the facts what researchers found.
 - Keywords & Academic Phrases - investigated, observed, discovered, revealed
-- Length - 500-15000 words 
+- Length - 500-1500 words 
 - Tense - Simple Past Tense - refers to what was found, observed or investigated 
 - Elements: 
   - Results 
@@ -155,7 +155,6 @@ class: inverse center, middle
 ## Anatomy of a Scientific Paper: Conclusion 
 - Purpose -  Summarize principal findings
 - Keywords & Academic Phrases - In conclusion, In addition, Overall, Nevertheless
-- Length - 1000-1500 words 
 - Tense - Simple Present Tense - emphasis on what should now be accepted as established knowledge.
 - Elements: 
   - Conclusion should relate back to the introduction, the hypothesis
