@@ -40,7 +40,7 @@ xaringanExtra::use_share_again()
 ```
 
 ```{r embed-xaringan-1, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
-xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16:9")
+xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson1.html", ratio = "16:9")
 ```
 
 ## Lesson 2: Literature Review 
@@ -57,12 +57,43 @@ xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson2.html", ratio = "16
 ```
 
 ## Lesson 3: Scientific Paper Reading and Research Data Management
+- How to read a scientific paper?
+- Identifying research gaps
+- Literature Documentation
 - Research Data Management
 - Scientific Paper Reading
 - Literature Review Matrix
 
 ```{r embed-xaringan-3, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
 xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson3.html", ratio = "16:9")
+```
+
+
+
+## Lesson 4: Study Designs and Sampling Methods	
+- Measures of Diseases Frequency
+- Descriptive Study Designs
+- Analytical Study Designs
+- Experimental Study Design
+- Measurements of Variables
+- Calculating Sample Size and Power
+- Selection of Study Population
+
+```{r embed-xaringan-4, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson4.html", ratio = "16:9")
+```
+
+## Lesson 5: Study Plan and Project Management, Principles of Data Collection
+- Principles of Project Management
+- Research Proposal Preparation
+- Elements for a Protocol for Research Studies
+- Principles of Data Collection
+- Designing Data Collection Tools
+- Data Management
+- Data Analysis
+
+```{r embed-xaringan-5, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/HRT101.S1_Lesson5.html", ratio = "16:9")
 ```
 
 

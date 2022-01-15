@@ -1,0 +1,48 @@
+---
+title: "HRT101.S1"
+subtitle: "Introduction to Health Research: Study Plan and Project Management, Principles of Data Collection"
+author: "Md. Jubayer Hossain <br/> Founder, CHIRAL Bangladesh"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/chiral.css", "css/chiral-fonts.css"]
+    lib_dir: libs
+    nature:
+      ratio: 16:9
+      highlightStyle: atelier-lakeside-light
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(knitr.table.format = "html") 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, 
+  comment = NA, dpi = 300,
+  fig.align = "center", out.width = "65%", cache = FALSE)
+
+library(ymlthis)
+library(tidyverse)
+library(xaringanExtra)
+library(palmerpenguins)
+xaringanExtra::use_panelset()
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+```
+
+## Agenda 
+- Study Plan 
+- Proposal Preparation
+- Principles of Data Collection 
+
+---
+class: center, middle
+
+# Thanks!
+
+Find me: <br/>
+Email: [contact.jubayerhossain@gmail.com](#)<br/>
+Website: https://jhossain.com/<br/> 
+Github: https://github.com/hossainlab<br/>
