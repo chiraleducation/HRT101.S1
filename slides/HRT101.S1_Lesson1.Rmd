@@ -37,6 +37,81 @@ xaringanExtra::style_share_again(
 - Overview of Health Research 
 - Research Questions and Hypothesis 
 
+
+
+---
+class: inverse center, middle
+# Introduction to Research
+
+
+---
+## What is Research?
+**Definition-1:** Research is ”creative and systematic work undertaken to increase the stock of knowledge”.It involves the collection, organization, and analysis of information to increase understanding of a topic or issue. A research project may be an expansion on past work in the field. 
+.footnote[
+[Source: Wikipedia; Accessed January 11, 2022, at https://en.wikipedia.org/wiki/Research]()
+]
+
+
+---
+class: inverse center, middle
+# Introduction to Health Research
+
+
+---
+## Dimension of Health Research
+- Theoretical research and applied research 
+- Preventive and therapeutic research 
+- Bench based research and bedside research 
+- Exploratory research and confirmatory research 
+- Implementation research and transnational research
+.footnote[
+[Source: Wikipedia; Accessed January 11, 2022, at https://en.wikipedia.org/wiki/Research]()
+]
+
+
+---
+## Fundamental Principles to be Followed 
+- Planning stage is very critical - spend enough time and involve the right people in planning  
+- Team work is critical 
+- Three levels of review are essential  
+    - Scientific review: novelty, rationality, justification 
+    - Ethics review: human subjects protection
+    - Regulatory review: foreign funding, sample shipment, intellectual property, exchange of visitors
+    
+.footnote[
+[Source: Wikipedia; Accessed January 11, 2022, at https://en.wikipedia.org/wiki/Research]()
+]
+
+---
+## Process of Health Research
+- Ensure that data is collected systematically
+- Draw meaningful conclusions 
+- Make appropriate decisions  
+- Take appropriate actions for prevention and control of diseases, conditions: evidence based actions  
+- These should be help in reduction of suffering and ultimatey improve health and well-being of the humanity
+.footnote[
+[Source: Wikipedia; Accessed January 11, 2022, at https://en.wikipedia.org/wiki/Research]()
+]
+
+
+
+---
+## Dimension of Health Research
+- Theoretical research and applied research 
+- Preventive and therapeutic research 
+- Bench based research and bedside research 
+- Exploratory research and confirmatory research 
+- Implementation research and transnational research
+.footnote[
+[Source: Wikipedia; Accessed January 11, 2022, at https://en.wikipedia.org/wiki/Research]()
+]
+
+---
+class: inverse center, middle
+# Formulating Research Question
+
+
+
 ---
 class: center, middle
 
